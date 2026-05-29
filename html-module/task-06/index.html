@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Event Feedback</h1>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" onblur="checkPhone()">
+    <p id="phoneMessage"></p>
+
+    <label for="eventName">Event</label>
+    <select id="eventName" onchange="showFee()">
+        <option>Music</option>
+        <option>Workshop</option>
+        <option>Clean City Drive</option>
+    </select>
+    <p id="fee">Fee: Rs. 100</p>
+
+    <p>Double click the image to enlarge it.</p>
+    <img id="eventImage" src="../task-04/images/event1.svg" alt="Community event" ondblclick="enlargeImage()">
+
+    <br><br>
+    <label for="feedback">Feedback</label><br>
+    <textarea id="feedback" onkeyup="countCharacters()"></textarea>
+    <p id="charCount">0 characters</p>
+
+    <button type="button" onclick="showConfirmation()">Submit</button>
+    <p id="confirmMessage" class="message"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

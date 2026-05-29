@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="150">
+  <rect width="240" height="150" fill="#e8f0fe" />
+  <rect x="20" y="25" width="200" height="100" fill="#ffffff" stroke="#1a73e8" stroke-width="4" />
+  <text x="120" y="82" text-anchor="middle" font-family="Arial" font-size="20" fill="#1a73e8">Event 1</text>
+</svg>

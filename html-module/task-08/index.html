@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving User Preferences</title>
+</head>
+<body onload="loadPreference()">
+    <h1>Event Preference</h1>
+
+    <label for="eventType">Preferred Event Type</label>
+    <select id="eventType" onchange="savePreference()">
+        <option>Music</option>
+        <option>Sports</option>
+        <option>Workshop</option>
+    </select>
+
+    <button type="button" onclick="clearPreferences()">Clear Preferences</button>
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

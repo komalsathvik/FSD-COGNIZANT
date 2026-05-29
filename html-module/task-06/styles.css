@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 180px;
+    border: 2px solid #444;
+}
+
+.big-image {
+    width: 300px;
+}
+
+.message {
+    color: green;
+    font-weight: bold;
+}

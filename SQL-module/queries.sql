@@ -21,3 +21,16 @@ WHERE NOT EXISTS (
       AND curdate()-r.registration_date<90
 );
 -- 4ques
+select event_id,count(event_id)
+from Sessions
+where time(start_time)>='10:00:00' and time(end_time)<='12:00:00'
+group by event_id;
+
+-- 5ques
+select u.city, count(distinct(u.user_id)) as ct
+from
+Users u JOIN Registrations r
+on u.user_id=r.user_id
+group by u.city
+order by ct desc
+limit 5;

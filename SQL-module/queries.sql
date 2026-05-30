@@ -34,3 +34,27 @@ on u.user_id=r.user_id
 group by u.city
 order by ct desc
 limit 5;
+
+-- 6 ques
+select event_id,count(event_id) as ct
+from Resources 
+group by event_id;
+
+-- 7 ques
+select u.user_id,f.comments,e.title from
+Users u JOIN Feedback f on f.user_id=u.user_id JOIN Events e on e.event_id=f.event_id
+where f.rating< 3;
+
+-- 8 ques
+select e.title,count(e.event_id) as ct
+from
+Events e JOIN Sessions s on e.event_id=s.event_id
+where e.status="upcoming"
+group by e.event_id;
+
+-- 9 ques
+select organizer_id , count(organizer_id) as count, status
+from Events
+group by organizer_id,status;
+
+-- 10 ques

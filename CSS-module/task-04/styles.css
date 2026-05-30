@@ -1,0 +1,19 @@
+body {
+  background-color: #e9f1f5;
+  background-image: url("city-background.jpg");
+  background-size: cover;
+  color: #143642;
+}
+
+.event-section {
+  margin: 40px auto;
+  max-width: 720px;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+.event-section h1 {
+  padding: 16px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0f5c6e, #2f9c95);
+}

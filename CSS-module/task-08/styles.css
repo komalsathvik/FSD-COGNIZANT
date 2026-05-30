@@ -1,0 +1,17 @@
+.eventCard {
+  margin: 24px;
+  padding: 20px;
+  border: 2px solid #2f6f73;
+}
+
+.selected-field {
+  outline: 3px solid #f5a623;
+}
+
+.hidden-example {
+  visibility: hidden;
+}
+
+.none-example {
+  display: none;
+}

@@ -1,0 +1,33 @@
+.nav-links {
+  display: flex;
+  gap: 2vw;
+}
+
+.page {
+  width: 90%;
+  min-height: 60vh;
+  margin: 5vh auto;
+}
+
+.page img {
+  width: 50%;
+  max-width: 480px;
+}
+
+.page h1 {
+  font-size: 4vw;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .page img {
+    width: 80%;
+  }
+
+  .page h1 {
+    font-size: 28px;
+  }
+}

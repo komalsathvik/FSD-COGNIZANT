@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "sass scss/custom.scss dist/bootstrap-custom.css"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.3",
+    "sass": "1.77.8"
+  }
+}

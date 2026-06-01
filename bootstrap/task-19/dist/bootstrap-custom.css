@@ -1,0 +1,51 @@
+:root {
+  --bs-primary: #0f766e;
+  --bs-primary-rgb: 15, 118, 110;
+  --bs-border-radius: 1rem;
+  --bs-border-radius-sm: .75rem;
+  --bs-border-radius-lg: 1.25rem;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.container {
+  width: min(100% - 2rem, 960px);
+  margin-inline: auto;
+}
+
+.py-5 {
+  padding-block: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.text-primary {
+  color: var(--bs-primary);
+}
+
+.card {
+  border: 1px solid #d9e2e1;
+  border-radius: var(--bs-border-radius);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: var(--bs-border-radius);
+  padding: .5rem 1rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}

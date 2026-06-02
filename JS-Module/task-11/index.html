@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 11 - Working with Forms</title>
+</head>
+<body>
+  <h1>Event Registration</h1>
+  <form id="registrationForm" novalidate>
+    <label>Name <input name="name" type="text"></label>
+    <span id="nameError"></span>
+    <br>
+    <label>Email <input name="email" type="email"></label>
+    <span id="emailError"></span>
+    <br>
+    <label>Event
+      <select name="event">
+        <option value="">Select event</option>
+        <option value="Music Night">Music Night</option>
+        <option value="Food Festival">Food Festival</option>
+      </select>
+    </label>
+    <span id="eventError"></span>
+    <br>
+    <button type="submit">Register</button>
+  </form>
+  <p id="message"></p>
+  <script src="main.js"></script>
+</body>
+</html>
